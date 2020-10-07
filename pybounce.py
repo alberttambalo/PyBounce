@@ -4,12 +4,13 @@ import time
 import random
 import math
 from random import randint
+pygame.font.init()
 
 WIDTH, HEIGHT = 750, 750
 
 WIN = pygame.display.set_mode((WIDTH,HEIGHT))
 
-
+pygame.display.set_caption('PyBounce!')
 
 class Ball:
     def __init__(self, x, y, r, g, b, i, j):
@@ -38,9 +39,17 @@ def main():
     Balls = []
     Lines = []
     CLine = []
+    main_font = pygame.font.SysFont("Arial", 30)
 
     def draw_back():
         WIN.fill((0,0,0))
+        instructions1 = main_font.render("Click to draw lines", 1, (255,255,255))
+        instructions2 = main_font.render("Space to add balls", 1, (255,255,255))
+        instructions3 = main_font.render("R and C to reset", 1, (255,255,255))
+        WIN.blit(instructions1,(10,0))
+        WIN.blit(instructions2, (10,30))
+        WIN.blit(instructions3, (10,60))
+
 
     def draw_lines():
         for l in Lines:
