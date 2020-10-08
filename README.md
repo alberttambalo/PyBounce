@@ -5,3 +5,7 @@
 * Implemented a linear reflection transformation matrix to accurately predict resulting direction and speed of balls after bounce.
 * Wrote efficient mesh collision detection algorithm.
  
+Screenshots<br/>
+![](Images/DrawTool.JPG)
+![](Images/Predicted.JPG)
+![](Images/Motion.JPG)
