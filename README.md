@@ -6,7 +6,5 @@
 * Wrote efficient mesh collision detection algorithm.
  
 Screenshots<br/>
-![](Images/DrawTool.JPG)
-![](Images/Predicted.JPG)
-![](Images/Motion.JPG)
+![](Images/Pybounce.gif)
 ![](Images/LTM.JPG)
